@@ -10,6 +10,7 @@ import avatar from '../Assets/avatar/download.png'
 const Navigation = () => {
     const [visible, setVisible] = useState(false);
     const { currentUser, logout } = useAuth();
+    const [photoURL, setPhotoURL] = useState(currentUser.photoURL ?? null);
 
     const navigate = useNavigate()
 
@@ -61,7 +62,7 @@ const Navigation = () => {
                 </div>
                 <div id='mob_nav_container' onClick={showNavMenu} className="nav-container mobile-nav-container nav-menu-hidden">
                     <Link to={"/profile"} className='nav_user-section'>
-                        <img alt='you' className='nav_user-photo' src={currentUser ? currentUser.photoURL : avatar} />
+                        <img alt='you' className='nav_user-photo' src={photoURL != null ? photoURL : avatar} />
                         <h2 className='nav_username'>{currentUser ? currentUser.displayName : "you"}</h2>
                         <div className='nav_line'></div>
                     </Link>
@@ -72,12 +73,12 @@ const Navigation = () => {
                         <Link className="nav_link" to="/">coffe shop</Link>
                         <Link className="nav_link" to="profile">profile</Link>
                         <Link className="nav_link" to="/">orders</Link>
-                        {currentUser ? 
-                        <button className='nav_btn' onClick={handleLogOut}>logout</button>
-                        :
-                        <Link className="nav_btn" to="/login">log in</Link>
+                        {currentUser ?
+                            <button className='nav_btn' onClick={handleLogOut}>logout</button>
+                            :
+                            <Link className="nav_btn" to="/login">log in</Link>
 
-                    }
+                        }
                     </div>
                     <div className="nav_user-info">
                         <p>username</p>
