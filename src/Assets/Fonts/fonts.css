@@ -1,0 +1,13 @@
+@font-face {
+    font-family: lato-bold;
+    src: url('./Lato2OFL/Lato-Black.ttf');
+}
+@font-face {
+    font-family: lato;
+    src: url('./Lato2OFL/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: imact;
+    src: url('./Lato2OFL/Lato-Regular.ttf');
+}

@@ -1,0 +1,203 @@
+@media (min-width:801px) {
+    .nav_name {
+        font-size: 42px;
+        color: rgb(255, 255, 255);
+    }
+
+    .app_nav-container {
+        background-color: #1A1819;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .df_js-sb_al-c {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        font-size: 20px;
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75vw;
+    }
+
+    .nav_link-group {
+        margin-left: 75px;
+    }
+
+    .nav_link {
+
+        margin-left: 25px;
+        text-decoration: none;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .df_js-sb {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        overflow: hidden;
+
+
+    }
+}
+
+@media (max-width:800px) {
+   
+    .nav_name {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        font-family: lato-bold;
+    }
+
+    .app_nav-container {
+        background-color: #1A1819;
+        padding-top: 5px;
+
+    }
+
+
+    .df_js-sb_al-c {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 50px;
+        align-items: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.397);
+        z-index: 1;
+        padding-top: 25px;
+        transition: ease-in-out .2s;
+
+
+
+    }
+
+    .burger {
+        color: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 35px;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 12px;
+    }
+    .nav_close-icon{
+        color: rgb(0, 255, 128);
+    }
+
+    .nav_user-section{
+        position: absolute;
+        top: 95px;
+        left: 50px;
+        text-decoration: none;
+    }
+    .nav_user-photo{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+    .nav_username{
+        color: white;
+        margin-top: 5px;
+        font-size: 27px;
+        font-family: lato;
+        position: relative;
+        left: 5px;
+    }
+    .nav_line{
+        width: 78vw;
+        margin-top: 20px;
+        height: 2px;
+        background-color: rgba(158, 158, 158, 0.349);
+    }
+    .mobile-header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+
+    }
+
+    .nav_authnav-btn-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-menu-hidden {
+        transition: ease-in-out .4s;
+        left: -110vw !important;
+    }
+
+    .mobile-nav-container {
+        transition: ease-in-out .5s;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        position: fixed;
+
+
+    }
+
+    .nav_link-group {
+        display: grid;
+        margin-left: 15vw;
+        margin-top: 50px;
+
+    }
+
+    .nav_link {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 25px;
+        padding-bottom: 5px;
+        font-family: lato;
+    }
+
+    .nav_btn {
+        margin-top: 45px;
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        color: white;
+        padding-bottom: 5px;
+        text-align: left;
+        font-family: lato;
+        color: rgb(0, 255, 136);
+        text-decoration: none;
+
+    }
+
+    .nav_auth-btn {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: none;
+        margin-top: 6px;
+        margin-bottom: 4px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-family: lato;
+        text-decoration: none;
+        margin-right: 25px;
+    }
+}
